@@ -13,7 +13,6 @@ public class CourseNotFoundAdvice {
 	@ResponseStatus(HttpStatus.NOT_FOUND)
 	@ResponseBody
 	public String CourseNotFoundHendler(CourseNotFoundException ex) {
-		
 		return ex.getMessage();
 	}
 
