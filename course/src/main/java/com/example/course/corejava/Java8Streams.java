@@ -1,7 +1,7 @@
 package com.example.course.corejava;
 
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -33,10 +33,10 @@ public class Java8Streams {
 
 		System.out.println();
 
-		String s = "gwfdefobdsfd";
-
-		System.out.println(Arrays.stream(s.split("")).map(String::toLowerCase)
-				.collect(Collectors.groupingBy(str -> str, HashMap::new, Collectors.counting())));
+//		String s = "gwfdefobdsfd";
+//
+//		System.out.println(Arrays.stream(s.split("")).map(String::toLowerCase)
+//				.collect(Collectors.groupingBy(str -> str, LinkedHashMap::new, Collectors.counting())));
 
 		List<Integer> intList = Arrays.asList(1, 2, 4, 5, 10, 10);
 		System.out.println(intList.stream().map(i -> i * i).distinct().collect(Collectors.toList()));

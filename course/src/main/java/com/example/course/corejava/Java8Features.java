@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -62,10 +61,10 @@ public class Java8Features {
 		System.out.println(Arrays.toString(sortArray(arr)));
 		
 		String  str = "Ppraveen";
-		str = str.toLowerCase();
-		System.out.println(Arrays.stream(str.split("")).map(String::toLowerCase).sorted().
-				collect(Collectors.groupingBy( s->s, LinkedHashMap::new, Collectors.counting())));
-		
+//		str = str.toLowerCase();
+//		System.out.println(Arrays.stream(str.split("")).map(String::toLowerCase).sorted().
+//				collect(Collectors.groupingBy( s->s, LinkedHashMap::new, Collectors.counting())));
+//		
 		// First unique character in a String
 		
 		char[] charCount = new char[256];

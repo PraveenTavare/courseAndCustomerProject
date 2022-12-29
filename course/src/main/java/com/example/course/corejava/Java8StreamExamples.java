@@ -53,8 +53,7 @@ public class Java8StreamExamples {
         		break;
         	}
         }
-        System.out.println(index == -1 ? "String is null" : "First non-repeating character is : " 
-        +str.charAt(index));
+        System.out.println(index == -1 ? "String is null" : "First non-repeating character is : " +str.charAt(index));
 	}
         	
 
