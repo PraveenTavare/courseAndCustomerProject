@@ -111,6 +111,13 @@ public class Java8Features {
 		
 		empList.stream().filter( emp -> emp.getEmpid() > 10L && emp.getEmpSalary() > 20000.00).
 			map(emp -> emp.getEmpSalary() + 1000.00).forEach(System.out::println);
+		
+		System.out.println(empList.stream().filter( emp -> emp.getEmpid() == 1L).findAny().get());
+	
+	
+	
+	
+	
 	}
 	
 	public static int[] sortArray(int[] arr) {	
