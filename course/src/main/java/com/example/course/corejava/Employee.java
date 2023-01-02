@@ -1,9 +1,15 @@
 package com.example.course.corejava;
 
-public class Employee {
+import java.io.Serializable;
+// Serializable - to convert state of Object into byte stream and Vice-versa
+public class Employee implements Serializable {
+
+	// Serial version Id added to know that same object to be deserialized -
+	// to verify the sender and receiver of serialized object
+	private static final long serialVersionUID = 3058532170216532674L;
 	
-	Long empid;
-	String empName;
+	static Long empid;
+	transient String empName;
 	String empAddress;
 	Double empSalary;
 	
